@@ -1,23 +1,21 @@
   CREATE CONDA ENVIRONMENTS
 conda env list
-conda create harlan-env #conda create harlan-env python=3.11
+conda create harlan-env #create harlan-env 
 conda activate harlan-env
-conda install python=3 --no-deps #<optional> #latest version 
-conda install ipykernel #conda install ipykernel
+conda install ipykernel #install ipykernel=latest-version #optional --no-deps
 conda list
 
   EXPORT STUDIO LAB CONDA ENVIROMENT
-conda env export > enviroment.yml
+conda env export > environment.yml #create .yml file
 
   INSTALL YOUR STUDIO LAB CONDA ENVIRONMENT
-conda env create --file <environmet-name>.yml
+conda env create --file <environment-name>.yml #create environment by .yml file
 conda env list
-conda activate <environmet-name>.yml
+conda activate <environment-name>.yml
 
   REMOVE CONDA ENVIROMENTS
-%conda reove <package-name>
 conda activate base
-conda remove --name harlan-env --all #conda env remove --name harlan-env
+conda remove --name harlan-env --all #remove harlan-env
 rm -rf *.* #delete all files in studio lab
 
   GIT
@@ -37,6 +35,8 @@ git config --global user.email <>
 git branch -m main
 git remote add origin https://github.com/<github-username>/<repository-name>.git
 git push -u origin <branch-name>
+
+git password = token
 
 git clone https://github.com/<github-username>/<repository-name>.git
 
