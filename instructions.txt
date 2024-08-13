@@ -1,6 +1,6 @@
   CREATE CONDA ENVIRONMENTS
 conda env list
-conda create harlan-env #create harlan-env 
+conda create --name harlan-env #create harlan-env 
 conda activate harlan-env
 conda install ipykernel #install ipykernel=latest-version #optional --no-deps
 conda list
